@@ -1,0 +1,1 @@
+Solution for image:2, is: [{'perm': 'may-year-had', 'freq': '273'}, {'perm': 'had-year-may', 'freq': '273'}, {'perm': 'may-year-add', 'freq': '308'}, {'perm': 'add-year-may', 'freq': '308'}, {'perm': 'had-year-day', 'freq': '331'}]

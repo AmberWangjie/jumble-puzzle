@@ -1,0 +1,11 @@
+# virtual-env 
+jumble-puzzle-env/*
+
+.DS_STORE
+
+# vscode setttings
+.vscode/
+
+SparkExercise.txt
+solution2.py
+testPermutations.py

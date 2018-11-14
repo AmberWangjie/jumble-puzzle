@@ -1,0 +1,1 @@
+Solution for image:3, is: [{'perm': 'said-research', 'freq': '376'}]
