@@ -154,10 +154,10 @@ if __name__=="__main__":
     #     .getOrCreate()
     spark = SparkSession \
         .builder \
-        .master("local") \
+        .master("local[*]") \
         .appName("Jumbled words puzzle solver") \
         .getOrCreate()
-        
+
     INPUT_FILE = 'input/jumbled_images-full.json'
     FREQ_FILE = 'input/freq_dict.json'
     FREQ_DICT = json.load(open(FREQ_FILE, "r"))
@@ -186,6 +186,7 @@ if __name__=="__main__":
 
     final_udf = udf(finalSolution, ArrayType(MapType(StringType(), StringType())))
     final_df = group_df.withColumn("final_solution",final_udf(group_df.solution_segments, group_df.circled_letters, group_df.image_id))
-    final_df.show(n=5)
+    # final_df.show(n=5)
+    final_df.foreach(lambda _:None)
 
     spark.stop()

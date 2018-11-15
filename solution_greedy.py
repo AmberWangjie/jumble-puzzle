@@ -135,8 +135,7 @@ def writeResults(results,image_id):
 if __name__=="__main__":
     spark = SparkSession \
         .builder \
-        .master("local") \
-        .config("spark.executor.cores", 2) \
+        .master("local[*]") \
         .appName("Jumbled words puzzle solver") \
         .getOrCreate()
         
@@ -167,6 +166,7 @@ if __name__=="__main__":
 
     final_udf = udf(finalSolution, ArrayType(MapType(StringType(), StringType())))
     final_df = group_df.withColumn("final_solution",final_udf(group_df.solution_segments, group_df.circled_letters, group_df.image_id))
-    final_df.show(n=5)
+    # final_df.show(n=5)
+    final_df.foreach(lambda _:None)
 
     spark.stop()
