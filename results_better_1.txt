@@ -1,1 +1,1 @@
-Solution for image:1, is: [{'perm': 'all-only-year', 'freq': '202'}, {'perm': 'all-year-only', 'freq': '202'}, {'perm': 'all-many-more', 'freq': '236'}, {'perm': 'all-more-many', 'freq': '236'}, {'perm': 'all-read-only', 'freq': '270'}]
+Solution for image:1, is: [{'perm': 'way-land-more', 'freq': '1000'}, {'perm': 'way-more-land', 'freq': '1000'}, {'perm': 'way-real-road', 'freq': '1002'}, {'perm': 'way-road-real', 'freq': '1002'}, {'perm': 'car-away-only', 'freq': '1004'}]

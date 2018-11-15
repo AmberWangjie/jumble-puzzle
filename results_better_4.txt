@@ -1,1 +1,1 @@
-Solution for image:4, is: []
+Solution for image:4, is: [{'perm': 'addition', 'freq': '1092'}]

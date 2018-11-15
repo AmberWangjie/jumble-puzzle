@@ -1,1 +1,1 @@
-Solution for image:2, is: [{'perm': 'may-year-had', 'freq': '273'}, {'perm': 'had-year-may', 'freq': '273'}, {'perm': 'may-year-add', 'freq': '308'}, {'perm': 'add-year-may', 'freq': '308'}, {'perm': 'had-year-day', 'freq': '331'}]
+Solution for image:2, is: [{'perm': 'bad-year-may', 'freq': '1004'}, {'perm': 'may-year-bad', 'freq': '1004'}, {'perm': 'car-head-day', 'freq': '1045'}, {'perm': 'day-head-car', 'freq': '1045'}, {'perm': 'mar-each-day', 'freq': '1050'}]

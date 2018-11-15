@@ -155,7 +155,6 @@ if __name__=="__main__":
     spark = SparkSession \
         .builder \
         .master("local") \
-        .config("spark.executor.cores", 2) \
         .appName("Jumbled words puzzle solver") \
         .getOrCreate()
         
@@ -163,7 +162,7 @@ if __name__=="__main__":
     FREQ_FILE = 'input/freq_dict.json'
     FREQ_DICT = json.load(open(FREQ_FILE, "r"))
     MAX_SCORE=9999
-    SCORE_THRESHOLD=500
+    SCORE_THRESHOLD=1100
     # updateFreqDict()
 
     jumbled_words_df =  createInputDf(INPUT_FILE)
